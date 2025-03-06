@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="./Pictures/Harry_Potter_Logo.png" alt="Harry Potter Logo">
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./sign_up.html">Sign Up</a></li>
+                <li><a href="./houses.html">Houses</a></li>
+            </ul>
+        </nav>
+        <!-- main section -->
+        <main>
+            <h2>Sign Up</h2>
+            <h3>&#128220 Basic Information</h3>
+            <hr>
+            <!-- Basic Information section -->
+            <section>
+                <form action="">
+                    <!-- Date of Birth Entry -->
+                    <div>
+                        <label for="birth">
+                            <p>Date of Birth:</p>
+                        </label>
+                        <input type="date" name="birth" id="birth" required>
+                    </div>
+                    <!-- Email Address Entry -->
+                    <div>
+                        <label for="email">
+                            <p>Email Address:</p>
+                        </label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <!-- Password Address Entry -->
+                    <div>
+                        <label for="password">
+                            <p>Password (8 characters minimum):</p>
+                        </label>
+                        <input type="password" name="password" id="password" minlength="8" required>
+                    </div>
+                    <!-- First and Last Name Entry -->
+                    <div>
+                        <p>
+                            <!-- First -->
+                            <label for="first">First Name:</label>
+                            <input type="text" name="first" id="first" required>
+                            <!-- Second -->
+                            <label for="last">Last Name:</label>
+                            <input type="text" name="last" id="last" required>
+                        </p>
+                    </div>
+            </section>
+            <!-- Hogwarts-Related Information Section -->
+            <section>
+                <h3>&#x1f9d9 Hogwarts-Related Information</h3>
+                <hr>
+                <!-- Hogwarts House Entry -->
+                <p>Select your Hogwarts House: (If non-sure, check out the houses page)</p>
+                <div>
+                    <input type="radio" name="house" id="gryffindor" value="gryffindor" required>
+                    <label for="gryffindor">&#129409 Gryffindor</label>
+                </div>
+                <div>
+                    <input type="radio" name="house" id="hufflepuff" value="hufflepuff" required>
+                    <label for="hufflepuff">&#129441 Hufflepuff</label>
+                </div>
+                <div>
+                    <input type="radio" name="house" id="ravenclaw" value="ravenclaw" required>
+                    <label for="ravenclaw">&#129413 Ravenclaw</label>
+                </div>
+                <div>
+                    <input type="radio" name="house" id="slytherin" value="slytherin" required>
+                    <label for="slytherin">&#128013 Slytherin</label>
+                </div>
+            </section>
+            <section>
+                <!-- Fan Engagement Section -->
+                <h3>&#9889 Fan Engagement</h3>
+                <hr>
+                <p><label for="fan">What Harry Potter media do you engage with? (Pick all the apply)</label></p>
+                <select name="fan" id="fan" multiple required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Book">&#128214 Book Reader</option>
+                    <option value="Movie">&#127909 Movie Lover</option>
+                    <option value="Game">&#127918 Game Enthusiast</option>
+                </select>
+            </section>
+            <P></P>
+            <button>Sign Up</button>
+            </form>
+        </main>
+</body>
+<footer>
+    <p>This is my website <sup>&reg;</sup> </p>
+</footer>
+
+</html>
